@@ -1,20 +1,26 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { X, Menu } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Team", href: "#team" },
-  { label: "Contact", href: "#contact" },
+  { label: "Engineering Consulting", href: "/engineering-consulting" },
+  { label: "Project Mgt Consultancy", href: "/project-mgt" },
+  { label: "Functions", href: "/functions" },
+  { label: "Insights", href: "/insights" },
+  { label: "Clients", href: "/clients" },
+  { label: "Supplies and Solutions", href: "#supplies" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -24,6 +30,14 @@ export default function Navbar() {
 
   const handleLinkClick = (href: string) => {
     setMenuOpen(false);
+    if (href.startsWith("/")) {
+      router.push(href);
+      return;
+    }
+    if (pathname !== "/") {
+      router.push("/" + href);
+      return;
+    }
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
@@ -36,60 +50,36 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
         style={{
-          background: scrolled
-            ? "rgba(13,27,62,0.97)"
-            : "#0d1b3e",
-          boxShadow: scrolled ? "0 4px 30px rgba(0,0,0,0.4)" : "none",
+          background: scrolled ? "rgba(13,27,62,0.97)" : "#0d1b3e",
+          boxShadow: scrolled ? "0 4px 30px rgba(0,0,0,0.35)" : "none",
           backdropFilter: scrolled ? "blur(12px)" : "none",
         }}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
-          {/* Logo */}
+        {/* Row 1 — Logo */}
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-4 pb-2 flex items-center justify-between">
           <motion.a
-            href="#home"
+            href={pathname === "/" ? "#home" : "/"}
             onClick={(e) => { e.preventDefault(); handleLinkClick("#home"); }}
-            whileHover={{ scale: 1.03 }}
-            className="cursor-pointer"
+            whileHover={{ scale: 1.02 }}
+            className="cursor-pointer leading-none"
           >
             <span
-              className="text-white text-3xl md:text-4xl select-none"
+              className="select-none"
               style={{
-                fontFamily: "var(--font-playfair), Georgia, serif",
-                fontStyle: "italic",
+                fontFamily: "'Great Vibes', var(--font-great-vibes), Georgia, serif, system-ui",
+                fontStyle: "normal",
                 fontWeight: 400,
-                letterSpacing: "0.02em",
+                color: "rgb(255, 255, 255)",
+                fontSize: "52px",
+                lineHeight: "60px",
+                display: "block",
               }}
             >
-              Samms<span style={{ color: "#c9a84c" }}>Consult</span>
+              SammsConsult
             </span>
           </motion.a>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <motion.a
-                key={link.label}
-                href={link.href}
-                onClick={(e) => { e.preventDefault(); handleLinkClick(link.href); }}
-                className="text-white/80 hover:text-[#c9a84c] text-sm font-light tracking-widest uppercase transition-colors duration-300 cursor-pointer relative group"
-                whileHover={{ y: -1 }}
-              >
-                {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#c9a84c] transition-all duration-300 group-hover:w-full" />
-              </motion.a>
-            ))}
-            <motion.a
-              href="#contact"
-              onClick={(e) => { e.preventDefault(); handleLinkClick("#contact"); }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-              className="px-5 py-2 border border-[#c9a84c] text-[#c9a84c] text-sm tracking-widest uppercase hover:bg-[#c9a84c] hover:text-[#0d1b3e] transition-all duration-300 font-medium cursor-pointer"
-            >
-              Get in Touch
-            </motion.a>
-          </nav>
-
-          {/* Hamburger */}
+          {/* Hamburger — mobile only */}
           <motion.button
             onClick={() => setMenuOpen(true)}
             whileHover={{ scale: 1.1 }}
@@ -97,14 +87,35 @@ export default function Navbar() {
             className="md:hidden flex flex-col gap-[5px] cursor-pointer p-2"
             aria-label="Open menu"
           >
-            <span className="w-6 h-[2px] bg-white block" />
-            <span className="w-5 h-[2px] bg-white block ml-auto" />
-            <span className="w-6 h-[2px] bg-white block" />
+            <Menu size={24} className="text-white" />
           </motion.button>
+        </div>
+
+        {/* Row 2 — Nav links (desktop only) */}
+        <div
+          className="hidden md:block border-t mx-6 lg:mx-10"
+          style={{ borderColor: "rgba(201,168,76,0.25)" }}
+        >
+          <nav className="max-w-7xl mx-auto flex items-center justify-between py-2">
+            {navLinks.map((link) => (
+              <motion.a
+                key={link.label}
+                href={link.href}
+                onClick={(e) => { e.preventDefault(); handleLinkClick(link.href); }}
+                className="relative group cursor-pointer px-1"
+                whileHover={{ y: -1 }}
+              >
+                <span className="text-white/75 hover:text-[#c9a84c] text-[11px] font-normal tracking-[0.12em] uppercase transition-colors duration-300 whitespace-nowrap">
+                  {link.label}
+                </span>
+                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-[#c9a84c] transition-all duration-300 group-hover:w-full" />
+              </motion.a>
+            ))}
+          </nav>
         </div>
       </motion.header>
 
-      {/* Mobile Menu */}
+      {/* Mobile Fullscreen Menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -117,10 +128,16 @@ export default function Navbar() {
           >
             <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
               <span
-                className="text-white text-3xl"
-                style={{ fontFamily: "var(--font-playfair)", fontStyle: "italic" }}
+                style={{
+                  fontFamily: "'Great Vibes', var(--font-great-vibes), Georgia, serif, system-ui",
+                  fontStyle: "normal",
+                  fontWeight: 400,
+                  color: "rgb(255, 255, 255)",
+                  fontSize: "46px",
+                  lineHeight: "56px",
+                }}
               >
-                Samms<span style={{ color: "#c9a84c" }}>Consult</span>
+                SammsConsult
               </span>
               <motion.button
                 onClick={() => setMenuOpen(false)}
@@ -132,7 +149,7 @@ export default function Navbar() {
               </motion.button>
             </div>
 
-            <nav className="flex flex-col justify-center flex-1 px-10 gap-6">
+            <nav className="flex flex-col justify-center flex-1 px-10 gap-5">
               {navLinks.map((link, i) => (
                 <motion.a
                   key={link.label}
@@ -140,27 +157,14 @@ export default function Navbar() {
                   onClick={(e) => { e.preventDefault(); handleLinkClick(link.href); }}
                   initial={{ x: 60, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: i * 0.07 + 0.1 }}
-                  className="text-white text-3xl font-light tracking-wide hover:text-[#c9a84c] transition-colors duration-300 border-b border-white/10 pb-4 cursor-pointer"
+                  transition={{ delay: i * 0.06 + 0.1 }}
+                  className="text-white text-2xl font-light tracking-wide hover:text-[#c9a84c] transition-colors duration-300 border-b border-white/10 pb-4 cursor-pointer"
                   style={{ fontFamily: "var(--font-playfair)" }}
                 >
                   {link.label}
                 </motion.a>
               ))}
             </nav>
-
-            <div className="px-10 pb-12">
-              <motion.a
-                href="#contact"
-                onClick={(e) => { e.preventDefault(); handleLinkClick("#contact"); }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-                className="block text-center py-4 border border-[#c9a84c] text-[#c9a84c] tracking-widest uppercase text-sm hover:bg-[#c9a84c] hover:text-[#0d1b3e] transition-all duration-300 cursor-pointer"
-              >
-                Get in Touch
-              </motion.a>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>

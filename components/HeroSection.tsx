@@ -107,7 +107,7 @@ export default function HeroSection() {
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
-            {["Reliability", "Asset Integrity", "Project Management"].map((tag) => (
+            {["Reliability", "Asset Integrity", "Project Management Consultancy", "Engineering Consultancy", "Risk Mgt"].map((tag) => (
               <span key={tag} className="flex items-center gap-3">
                 <span className="text-[#c9a84c] text-lg font-light">|</span>
                 <span
@@ -163,7 +163,6 @@ export default function HeroSection() {
           style={{ lineHeight: "1.85" }}
         >
           We provide innovative engineering and technology solutions for businesses worldwide.
-          Combining decades of expertise with cutting-edge methodologies.
         </motion.p>
 
         {/* CTA Buttons */}
