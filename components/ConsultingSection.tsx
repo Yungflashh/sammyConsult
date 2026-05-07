@@ -24,6 +24,27 @@ const consultingItems = [
       "We combine engineering rigour with modern technology to design, implement, and support solutions that drive operational excellence and long-term value for our global clients.",
     reverse: false,
   },
+  {
+    image: "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=700&auto=format&fit=crop",
+    title: "Circular Economy",
+    description:
+      "We support governments to move from circular economy policy to implementation at scale. Our frameworks align national priorities with continental strategies such as the African Union circular economy agenda. We enable ministries to integrate circular economy into industrial policy, climate strategy, and job creation programmes.",
+    reverse: true,
+  },
+  {
+    image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=700&auto=format&fit=crop",
+    title: "Governance",
+    description:
+      "As a governance specialist, we combine UK public-sector rigour with international development expertise, delivering reforms that meet both local context needs and global expectations.",
+    reverse: false,
+  },
+  {
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=700&auto=format&fit=crop",
+    title: "Risk Management",
+    description:
+      "We help governments, industries and individuals anticipate, quantify, and manage risks before they become crises. Risk management is not a control function — it is a core driver of economic stability and investor confidence. We transform fragmented risk practices into integrated national risk management systems, turning uncertainty into structured, decision-ready intelligence. We de-risk government projects to unlock private capital and accelerate PPP delivery, helping governments present credible, risk-adjusted investment cases to global investors.",
+    reverse: true,
+  },
 ];
 
 export default function ConsultingSection() {

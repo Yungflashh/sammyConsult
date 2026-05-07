@@ -37,8 +37,9 @@ const industries = [
   "Building & Infrastructure",
   "Manufacturing (Battery Systems, FMCG)",
   "Water",
-  "Transport — Rail & Aviation",
+  "Transport — Road, Rail & Aviation",
   "Logistics",
+  "Circular Economy",
 ];
 
 const fadeUp = {

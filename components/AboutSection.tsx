@@ -11,7 +11,7 @@ const cards = [
   {
     title: "Our Beginnings",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
-    text: "We are an independent specialised engineering consultancy and service company, experienced in providing Safety & Reliability engineering and consulting services as well as project management solutions. Established in 2011.",
+    text: "We are an independent specialised engineering consultancy and service company, experienced in providing engineering and consulting services as well as project management solutions. Established in 2011.",
   },
 ];
 

@@ -4,22 +4,10 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    icon: "⚙️",
-    title: "Reliability Engineering",
+    icon: "🏛️",
+    title: "Governance",
     description:
-      "Systematic approach to ensuring assets perform their intended functions under defined conditions throughout their lifecycle.",
-  },
-  {
-    icon: "🛡️",
-    title: "Asset Integrity",
-    description:
-      "Comprehensive asset integrity management to ensure physical assets continue to fulfill their design functions safely and efficiently.",
-  },
-  {
-    icon: "📋",
-    title: "Project Management",
-    description:
-      "End-to-end project management solutions from concept to commissioning, ensuring on-time, on-budget delivery.",
+      "Combining UK public-sector rigour with international development expertise, delivering reforms that meet local context needs and global expectations.",
   },
   {
     icon: "⚠️",
@@ -34,10 +22,28 @@ const services = [
       "Specialist engineering advice and technical support across upstream, midstream, and downstream sectors.",
   },
   {
-    icon: "🌐",
-    title: "Technology Solutions",
+    icon: "📋",
+    title: "Project Management Consultancy",
     description:
-      "Cutting-edge digital and technology solutions that drive operational efficiency and competitive advantage.",
+      "End-to-end project management solutions from concept to commissioning, ensuring on-time, on-budget delivery.",
+  },
+  {
+    icon: "♻️",
+    title: "Circular Economy",
+    description:
+      "Supporting governments and industries to move from circular economy policy to implementation at scale, aligned with continental strategies.",
+  },
+  {
+    icon: "⚙️",
+    title: "Reliability",
+    description:
+      "Systematic approach to ensuring assets perform their intended functions under defined conditions throughout their lifecycle.",
+  },
+  {
+    icon: "🛡️",
+    title: "Asset Integrity",
+    description:
+      "Comprehensive asset integrity management to ensure physical assets continue to fulfill their design functions safely and efficiently.",
   },
 ];
 

@@ -5,11 +5,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
 const taglines = [
+  "Governance",
+  "Risk Management",
+  "Engineering Consultancy",
+  "Project Management Consultancy",
+  "Circular Economy",
   "Reliability",
   "Asset Integrity",
-  "Project Management Consultancy",
-  "Engineering Consultancy",
-  "Risk Management",
 ];
 
 // Fixed positions — no Math.random() to avoid hydration mismatch
@@ -107,7 +109,7 @@ export default function HeroSection() {
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
-            {["Reliability", "Asset Integrity", "Project Management Consultancy", "Engineering Consultancy", "Risk Mgt"].map((tag) => (
+            {["Governance", "Risk Management", "Engineering Consultancy", "Project Management Consultancy", "Circular Economy", "Reliability", "Asset Integrity"].map((tag) => (
               <span key={tag} className="flex items-center gap-3">
                 <span className="text-[#c9a84c] text-lg font-light">|</span>
                 <span

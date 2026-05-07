@@ -28,8 +28,8 @@ const insights = [
   {
     title: "Hydro Energy",
     image:
-      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=800&auto=format&fit=crop",
-    alt: "Hydroelectric dam and water flow",
+      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop",
+    alt: "Hydroelectric dam turbines and water infrastructure",
     desc: "Our Hydro Energy services help businesses research in order to create powerful, scalable, and robust hydroelectric power solutions that drive growth.",
   },
   {
@@ -42,8 +42,8 @@ const insights = [
   {
     title: "Energy Storage",
     image:
-      "https://images.unsplash.com/photo-1605980776566-0486c3ac7617?q=80&w=800&auto=format&fit=crop",
-    alt: "Large-scale battery energy storage system",
+      "https://images.unsplash.com/photo-1548946526-f69e2424cf45?q=80&w=800&auto=format&fit=crop",
+    alt: "Grid-scale battery energy storage facility",
     desc: "Our Energy Storage services research innovative solutions for storing renewable energy. Our team of experts has the skills and experience in options selection.",
   },
   {
