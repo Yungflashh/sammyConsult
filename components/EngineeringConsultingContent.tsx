@@ -5,16 +5,20 @@ import Image from "next/image";
 
 const services = [
   {
+    title: "Risk Management",
+    desc: "Quantitative and qualitative risk assessments, HAZOP, HAZID, LOPA, SIL determination and safety case development.",
+  },
+  {
+    title: "Circular Economy",
+    desc: "A circular economy is an economic system designed to eliminate waste, keep materials in use, and regenerate natural systems — in contrast to the traditional \"take–make–dispose\" model.",
+  },
+  {
     title: "Reliability Engineering",
     desc: "RAM analysis, FMEA/FMECA, RCM, RBI, and failure analysis to maximise plant availability and performance.",
   },
   {
     title: "Asset Integrity Management",
     desc: "Lifecycle asset management strategies, inspection planning, corrosion management and fitness-for-service assessments.",
-  },
-  {
-    title: "Risk Management",
-    desc: "Quantitative and qualitative risk assessments, HAZOP, HAZID, LOPA, SIL determination and safety case development.",
   },
   {
     title: "Project Management Consultancy",
@@ -130,17 +134,15 @@ export default function EngineeringConsultingContent() {
               <strong className="font-semibold" style={{ color: "#0d1b3e" }}>
                 Sammsconsult
               </strong>{" "}
-              has been providing Safety &amp; Reliability, Asset Maintenance, Project &amp; Risk
-              Management and Consultancy Services to Industries Globally.
+              has been providing Project &amp; Risk Management and Consultancy Services to Industries Globally.
             </p>
             <p>
               It was established and registered in the UK in the year 2011. We are an independent
-              consultancy company, experienced in providing Safety &amp; Reliability Engineering
-              and Consulting services &amp; solutions to various industries. With a team of Safety
-              &amp; Reliability Consultants, Project Managers and over 20 years&apos; experience
-              spread across Energy (Oil &amp; Gas — Upstream, Midstream and Downstream),
-              Renewables &amp; Clean Nuclear, Petrochemical, Building, Infrastructure,
-              Manufacturing (Battery Systems, FMCG), Water and Transport (Rail &amp; Aviation)
+              consultancy company, experienced in providing Engineering and Consulting services &amp;
+              solutions to various industries. With a team of Consultants and Project Managers and
+              over 20 years&apos; experience spread across Energy (Oil &amp; Gas — Upstream, Midstream
+              and Downstream), Renewables &amp; Clean Nuclear, Petrochemical, Building, Infrastructure,
+              Manufacturing (Battery Systems, FMCG), Water and Transport (Rail, Road &amp; Aviation)
               &amp; Logistics Industries.
             </p>
             <p>
@@ -151,8 +153,7 @@ export default function EngineeringConsultingContent() {
             <p>
               Principal Consultants and Specialists (SMEs) driving the business include
               professionals with Chartered Engineer status and membership of recognised bodies
-              such as IMechE, IChemE, IET and SaRS, ensuring the highest standard of delivery
-              on every engagement.
+              such as IET and PMI ensuring the highest standard of delivery on every engagement.
             </p>
           </motion.div>
         </div>

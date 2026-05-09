@@ -42,8 +42,8 @@ const insights = [
   {
     title: "Energy Storage",
     image:
-      "https://images.unsplash.com/photo-1548946526-f69e2424cf45?q=80&w=800&auto=format&fit=crop",
-    alt: "Grid-scale battery energy storage facility",
+      "https://images.unsplash.com/photo-1620714223084-8fcacc2dbe4d?q=80&w=800&auto=format&fit=crop",
+    alt: "Lithium battery cells for large-scale energy storage",
     desc: "Our Energy Storage services research innovative solutions for storing renewable energy. Our team of experts has the skills and experience in options selection.",
   },
   {

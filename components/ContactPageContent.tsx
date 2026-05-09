@@ -207,7 +207,7 @@ export default function ContactPageContent() {
                 <div>
                   <p className="text-xs tracking-widest uppercase mb-1 font-medium" style={{ color: "#9ca3af" }}>Address</p>
                   <p className="text-sm font-light" style={{ color: "#0d1b3e" }}>
-                    Rubislaw Square, Aberdeen AB15 4DG, UK
+                    Rubislaw Square, Off Queen&apos;s Road, Aberdeen AB15 4DG, UK
                   </p>
                 </div>
               </div>
@@ -269,7 +269,7 @@ export default function ContactPageContent() {
       <section className="h-72 w-full" style={{ background: "#e5e7eb" }}>
         <iframe
           title="SammsConsult Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2185.5!2d-2.1327!3d57.1437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488458908c61a58d%3A0x5bbd2a0e8f3427c3!2sRubislaw%20Square%2C%20Aberdeen%20AB15%204DG%2C%20UK!5e0!3m2!1sen!2suk!4v1234567890"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2185.5!2d-2.1327!3d57.1437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488458908c61a58d%3A0x5bbd2a0e8f3427c3!2sRubislaw%20Square%2C%20Off%20Queen's%20Road%2C%20Aberdeen%20AB15%204DG%2C%20UK!5e0!3m2!1sen!2suk!4v1234567890"
           width="100%"
           height="100%"
           style={{ border: 0, display: "block" }}
