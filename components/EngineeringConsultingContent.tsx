@@ -9,24 +9,20 @@ const services = [
     desc: "Quantitative and qualitative risk assessments, HAZOP, HAZID, LOPA, SIL determination and safety case development.",
   },
   {
+    title: "Governance",
+    desc: "As a governance specialist, we combine UK public-sector rigour with international development expertise, delivering reforms that meet both local context needs and global expectations.",
+  },
+  {
     title: "Circular Economy",
-    desc: "A circular economy is an economic system designed to eliminate waste, keep materials in use, and regenerate natural systems — in contrast to the traditional \"take–make–dispose\" model.",
-  },
-  {
-    title: "Reliability Engineering",
-    desc: "RAM analysis, FMEA/FMECA, RCM, RBI, and failure analysis to maximise plant availability and performance.",
-  },
-  {
-    title: "Asset Integrity Management",
-    desc: "Lifecycle asset management strategies, inspection planning, corrosion management and fitness-for-service assessments.",
+    desc: "We support governments to move from circular economy policy to implementation at scale. Our frameworks align national priorities with continental strategies such as the African Union circular economy agenda. We enable ministries to integrate circular economy into industrial policy, climate strategy, and job creation programmes.",
   },
   {
     title: "Project Management Consultancy",
     desc: "End-to-end project delivery, PMC/EPCM support, schedule management, cost control and stakeholder coordination.",
   },
   {
-    title: "Maintenance Optimisation",
-    desc: "Planned preventive maintenance strategies, maintenance task analysis, spares optimisation and KPI frameworks.",
+    title: "Sustainable Aftermarket Framework",
+    desc: "A structured approach to extending asset lifecycles through sustainable parts sourcing, remanufacturing, and responsible end-of-life asset management — reducing environmental impact while maintaining operational performance.",
   },
   {
     title: "Trend Analysis & Future Scoping",
@@ -271,7 +267,7 @@ export default function EngineeringConsultingContent() {
             Ready to work with us?
           </h2>
           <p className="text-white/60 text-sm mb-10 leading-relaxed">
-            Get in touch to discuss how SammsConsult can deliver value to your project or organisation.
+            Get in touch to discuss how <span style={{ fontFamily: "'Great Vibes', var(--font-great-vibes), Georgia, serif", fontSize: "1.3em" }}>SammsConsult</span> can deliver value to your project or organisation.
           </p>
           <motion.a
             href="/#contact"

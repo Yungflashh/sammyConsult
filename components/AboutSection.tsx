@@ -49,7 +49,7 @@ export default function AboutSection() {
             style={{ fontFamily: "var(--font-playfair)", color: "#0d1b3e" }}
           >
             The Story of{" "}
-            <span style={{ fontStyle: "italic", color: "#c9a84c" }}>SammsConsult</span>
+            <span style={{ fontStyle: "italic", color: "#c9a84c", fontFamily: "'Great Vibes', var(--font-great-vibes), Georgia, serif" }}>SammsConsult</span>
           </motion.h2>
         </div>
 

@@ -132,7 +132,7 @@ export default function ProjectMgtContent() {
             Let us manage your next project
           </h2>
           <p className="text-white/60 text-sm mb-10 leading-relaxed">
-            Get in touch to find out how SammsConsult can deliver your project on time, within budget, and to the highest standards.
+            Get in touch to find out how <span style={{ fontFamily: "'Great Vibes', var(--font-great-vibes), Georgia, serif", fontSize: "1.3em" }}>SammsConsult</span> can deliver your project on time, within budget, and to the highest standards.
           </p>
           <motion.a
             href="/#contact"

@@ -84,7 +84,7 @@ export default function ClientsContent() {
               className="text-2xl md:text-4xl font-light"
               style={{ fontFamily: "var(--font-playfair)", color: "#0d1b3e" }}
             >
-              Why Choose SammsConsult
+              Why Choose <span style={{ fontFamily: "'Great Vibes', var(--font-great-vibes), Georgia, serif" }}>SammsConsult</span>
             </h2>
           </motion.div>
 
@@ -218,7 +218,7 @@ export default function ClientsContent() {
             Ready to join our client list?
           </h2>
           <p className="text-sm mb-10 leading-relaxed" style={{ color: "#6b7280" }}>
-            Get in touch to discuss how SammsConsult can deliver value to your organisation.
+            Get in touch to discuss how <span style={{ fontFamily: "'Great Vibes', var(--font-great-vibes), Georgia, serif", fontSize: "1.3em" }}>SammsConsult</span> can deliver value to your organisation.
           </p>
           <motion.a
             href="/#contact"
