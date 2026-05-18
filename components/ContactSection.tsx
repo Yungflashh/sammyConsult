@@ -89,7 +89,7 @@ export default function ContactSection() {
             {[
               { icon: MapPin, label: "Address", value: "London, United Kingdom" },
               { icon: Phone, label: "Phone", value: "+44 7909 018596" },
-              { icon: Mail, label: "Email", value: "info@sammsconsult.com" },
+              { icon: Mail, label: "Email", value: "info@sammsconsult.co.uk" },
             ].map((item, i) => (
               <motion.div
                 key={item.label}

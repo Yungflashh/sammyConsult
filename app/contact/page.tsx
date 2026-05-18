@@ -6,7 +6,7 @@ import ContactPageContent from "@/components/ContactPageContent";
 export const metadata: Metadata = {
   title: "Contact Us — SammsConsult",
   description:
-    "Get in touch with SammsConsult. Visit us at Rubislaw Square, Aberdeen or email sammsconsult@gmail.com.",
+    "Get in touch with SammsConsult. Visit us at Rubislaw Square, Aberdeen or email info@sammsconsult.co.uk.",
 };
 
 export default function ContactPage() {

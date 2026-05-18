@@ -188,11 +188,11 @@ export default function ContactPageContent() {
                 <div>
                   <p className="text-xs tracking-widest uppercase mb-1 font-medium" style={{ color: "#9ca3af" }}>Email</p>
                   <a
-                    href="mailto:sammsconsult@gmail.com"
+                    href="mailto:info@sammsconsult.co.uk"
                     className="text-sm font-light hover:underline"
                     style={{ color: "#0d1b3e" }}
                   >
-                    sammsconsult@gmail.com
+                    info@sammsconsult.co.uk
                   </a>
                 </div>
               </div>
