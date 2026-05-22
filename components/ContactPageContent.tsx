@@ -221,7 +221,7 @@ export default function ContactPageContent() {
                 </div>
                 <div>
                   <p className="text-xs tracking-widest uppercase mb-1 font-medium" style={{ color: "#9ca3af" }}>Website</p>
-                  <p className="text-sm font-light" style={{ color: "#0d1b3e" }}>www.sammsconsult.com</p>
+                  <p className="text-sm font-light" style={{ color: "#0d1b3e" }}>www.sammsconsult.co.uk</p>
                 </div>
               </div>
             </div>

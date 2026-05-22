@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Engineering Consulting", href: "/engineering-consulting" },
   { label: "Project Mgt Consultancy", href: "/project-mgt" },
+  { label: "Transport", href: "/transport" },
   { label: "Functions", href: "/functions" },
   { label: "Insights", href: "/insights" },
   { label: "Clients", href: "/clients" },

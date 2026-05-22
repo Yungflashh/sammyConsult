@@ -5,41 +5,29 @@ import Image from "next/image";
 
 const services = [
   {
-    title: "Risk Management",
-    desc: "Using a proactive analytical framework, we anticipate, quantify, and manage risks before they become issues. The art of Risk Management is a core driver of economic stability and investor confidence. We transform fragmented risk practices into integrated national risk management systems, turning uncertainty into structured, decision-ready intelligence. We de-risk government projects to unlock private capital and accelerate PPP delivery, helping individuals and governments present credible, risk-adjusted investment cases to global investors.",
+    title: "Road Network Design",
+    desc: "Strategic consultancy input to deliver resilient, regulatory-compliant road networks that stand the test of time and meet the highest engineering standards.",
   },
   {
-    title: "Governance",
-    desc: "As a governance specialist, we combine UK public-sector rigour with international development expertise, delivering reforms that meet both local context needs and global expectations.",
+    title: "3D Ground Modelling Review",
+    desc: "Critical review and challenge of advanced 3D ground modelling outputs, identifying inconsistencies and eliminating costly design errors before they reach construction.",
   },
   {
-    title: "Circular Economy",
-    desc: "We support governments to move from circular economy policy to implementation at scale. Our frameworks align national priorities with continental strategies such as the African Union circular economy agenda. We enable ministries to integrate circular economy into industrial policy, climate strategy, and job creation programmes.",
+    title: "Materials Lifecycle Analysis",
+    desc: "Comprehensive assessment of materials selection and lifecycle performance to ensure long-term durability, reduce whole-life costs, and support sustainable infrastructure.",
   },
   {
-    title: "Project Management Consultancy",
-    desc: "End-to-end project delivery, PMC/EPCM support, schedule management, cost control and stakeholder coordination.",
+    title: "Regulatory Compliance",
+    desc: "Expert guidance through UK and international regulatory frameworks, ensuring designs are fully compliant and ready for approval without delays or costly revisions.",
   },
   {
-    title: "Sustainable Aftermarket Framework",
-    desc: "A structured approach to extending asset lifecycles through sustainable parts sourcing, remanufacturing, and responsible end-of-life asset management — reducing environmental impact while maintaining operational performance.",
+    title: "Value Engineering",
+    desc: "Systematic review of design solutions to maximise value, reduce unnecessary costs, and ensure delivery on time and under budget without compromising quality or safety.",
   },
   {
-    title: "Trend Analysis & Future Scoping",
-    desc: "Insight services including trend analysis, robotics integration advisory, and future-state technology road-mapping.",
+    title: "Right First Time Design Assurance",
+    desc: "Independent design assurance and constructability review to fast-track your path from design to construction, minimising rework and accelerating project delivery.",
   },
-];
-
-const industries = [
-  "Energy — Oil & Gas (Upstream, Midstream & Downstream)",
-  "Renewables & Clean Nuclear",
-  "Petrochemical",
-  "Building & Infrastructure",
-  "Manufacturing (Battery Systems, FMCG)",
-  "Water",
-  "Transport — Road, Rail & Aviation",
-  "Logistics",
-  "Circular Economy",
 ];
 
 const fadeUp = {
@@ -51,7 +39,7 @@ const fadeUp = {
   }),
 };
 
-export default function EngineeringConsultingContent() {
+export default function TransportContent() {
   return (
     <>
       {/* ── Page hero banner ── */}
@@ -76,9 +64,9 @@ export default function EngineeringConsultingContent() {
             className="text-3xl md:text-5xl font-light text-white leading-snug"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
-            Engineering &amp; Risk Management
+            Transport Engineering
             <br />
-            <span style={{ color: "#c9a84c" }}>Consulting Services</span>
+            <span style={{ color: "#c9a84c" }}>Consultancy</span>
           </motion.h1>
           <motion.div
             initial={{ scaleX: 0 }}
@@ -103,8 +91,8 @@ export default function EngineeringConsultingContent() {
             style={{ borderRadius: "2px" }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1170&auto=format&fit=crop"
-              alt="SammsConsult engineering team"
+              src="https://cdn.prod.website-files.com/5b6df8bb681f89c158b48f6b/5dbfea0bec13ae0ca53925ea_engineering-consulting-services.jpg"
+              alt="Trucks on highway road"
               width={560}
               height={420}
               className="w-full object-cover"
@@ -128,28 +116,25 @@ export default function EngineeringConsultingContent() {
           >
             <p>
               <strong className="font-semibold" style={{ color: "#0d1b3e" }}>
-                Sammsconsult
+                SammsConsult
               </strong>{" "}
-              has been providing Project &amp; Risk Management and Consultancy Services to Industries Globally.
+              provides engineering consultancy as a strategic input to help deliver resilient,
+              regulatory-compliant road networks on time and under budget.
             </p>
             <p>
-              It was established and registered in the UK in the year 2011. We are an independent
-              consultancy company, experienced in providing Engineering and Consulting services &amp;
-              solutions to various industries. With a team of Consultants and Project Managers and
-              over 20 years&apos; experience spread across Energy (Oil &amp; Gas — Upstream, Midstream
-              and Downstream), Renewables &amp; Clean Nuclear, Petrochemical, Building, Infrastructure,
-              Manufacturing (Battery Systems, FMCG), Water and Transport (Rail, Road &amp; Aviation)
-              &amp; Logistics Industries.
+              Asking the right questions, critiquing advanced 3D ground modelling as well as
+              providing materials lifecycle analysis, we eliminate costly errors before they
+              reach construction.
             </p>
             <p>
-              We are flexible and globally mobile; services can easily be carried out remotely,
-              thus considerably reducing project lifecycle costs. Our insight services also
-              include Trend Analysis, Robotics, and Future Scoping.
+              We aim to help ensure delivery of &lsquo;Right First Time&rsquo; designs that
+              fast-track your path to construction — reducing rework, saving time, and protecting
+              your budget at every stage.
             </p>
             <p>
-              Principal Consultants and Specialists (SMEs) driving the business include
-              professionals with Chartered Engineer status and membership of recognised bodies
-              such as IET and PMI ensuring the highest standard of delivery on every engagement.
+              Our transport consultants bring deep technical expertise and independent
+              judgement to every engagement, acting as a trusted strategic partner from
+              early-stage design through to construction-ready delivery.
             </p>
           </motion.div>
         </div>
@@ -172,7 +157,7 @@ export default function EngineeringConsultingContent() {
               className="text-2xl md:text-4xl font-light"
               style={{ fontFamily: "var(--font-playfair)", color: "#0d1b3e" }}
             >
-              Our Core Capabilities
+              Our Transport Capabilities
             </h2>
           </motion.div>
 
@@ -203,51 +188,6 @@ export default function EngineeringConsultingContent() {
         </div>
       </section>
 
-      {/* ── Industries Served ── */}
-      <section className="py-20 px-6 lg:px-10 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <p className="text-xs tracking-[0.3em] uppercase mb-3" style={{ color: "#c9a84c" }}>
-              Sectors
-            </p>
-            <h2
-              className="text-2xl md:text-4xl font-light"
-              style={{ fontFamily: "var(--font-playfair)", color: "#0d1b3e" }}
-            >
-              Industries We Serve
-            </h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {industries.map((industry, i) => (
-              <motion.div
-                key={industry}
-                custom={i}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-                className="flex items-center gap-4 py-4 px-5 border border-gray-100 hover:border-[#c9a84c] transition-colors duration-300"
-              >
-                <span
-                  className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-                  style={{ background: "#c9a84c" }}
-                />
-                <span className="text-sm" style={{ color: "#374151" }}>
-                  {industry}
-                </span>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── CTA ── */}
       <section
         className="py-20 px-6 lg:px-10 text-center"
@@ -267,7 +207,16 @@ export default function EngineeringConsultingContent() {
             Ready to work with us?
           </h2>
           <p className="text-white/60 text-sm mb-10 leading-relaxed">
-            Get in touch to discuss how <span style={{ fontFamily: "'Great Vibes', var(--font-great-vibes), Georgia, serif", fontSize: "1.3em" }}>SammsConsult</span> can deliver value to your project or organisation.
+            Get in touch to discuss how{" "}
+            <span
+              style={{
+                fontFamily: "'Great Vibes', var(--font-great-vibes), Georgia, serif",
+                fontSize: "1.3em",
+              }}
+            >
+              SammsConsult
+            </span>{" "}
+            can deliver resilient transport infrastructure for your project.
           </p>
           <motion.a
             href="/#contact"

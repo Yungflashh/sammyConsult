@@ -46,7 +46,7 @@ export default function Footer() {
               className="text-white text-4xl mb-5 block"
               style={{ fontFamily: "'Great Vibes', var(--font-great-vibes), Georgia, serif" }}
             >
-              Samms<span style={{ color: "#c9a84c" }}>Consult</span>
+              SammsConsult
             </span>
             <p
               className="text-xs leading-relaxed font-light mb-6"

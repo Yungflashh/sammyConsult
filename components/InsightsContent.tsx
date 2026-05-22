@@ -44,7 +44,7 @@ const insights = [
     image:
       "https://images.unsplash.com/photo-1620714223084-8fcacc2dbe4d?q=80&w=800&auto=format&fit=crop",
     alt: "Lithium battery cells for large-scale energy storage",
-    desc: "Our Energy Storage services research innovative solutions for storing renewable energy. Our team of experts has the skills and experience in options selection.",
+    desc: "Our Energy and Data Storage Centre services research innovative solutions for storing renewable energy and also data centres. Our team of experts has the skills and experience in options selection.",
   },
   {
     title: "Trend Analysis",
