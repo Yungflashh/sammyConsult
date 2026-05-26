@@ -87,7 +87,7 @@ export default function ContactSection() {
             </p>
 
             {[
-              { icon: MapPin, label: "Address", value: "London, United Kingdom" },
+              { icon: MapPin, label: "Address", value: "Rubislaw Square, Off Queen's Road, Aberdeen AB15 4DG, UK" },
               { icon: Phone, label: "Phone", value: "+44 7909 018596" },
               { icon: Mail, label: "Email", value: "info@sammsconsult.co.uk" },
             ].map((item, i) => (

@@ -14,8 +14,8 @@ const services = [
   {
     title: "Research & Development",
     image:
-      "https://images.unsplash.com/photo-1532094349884-543559c61e4b?q=80&w=800&auto=format&fit=crop",
-    alt: "Research and development laboratory",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",
+    alt: "People doing research with notes and writing",
     desc: "Be it new start-ups or established institutions, they all require specialist initiation, concept and feasibility studies before project sanction. We carry out these studies to ensure the initial sprint covers all the basis for growth and sustainability of the business. Examples include initiation studies for industries such as mining, rail, energy, and consulting services.",
   },
   {
