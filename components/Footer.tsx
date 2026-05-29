@@ -116,7 +116,7 @@ export default function Footer() {
             className="text-xs font-light text-center"
             style={{ color: "rgba(255,255,255,0.4)" }}
           >
-            Copyright &copy; {new Date().getFullYear()} <span style={{ fontFamily: "'Great Vibes', var(--font-great-vibes), Georgia, serif", fontSize: "1.3em" }}>Sammsconsult</span> &mdash; All Rights Reserved.
+            Copyright &copy; {new Date().getFullYear()} <span style={{ fontFamily: "'Great Vibes', var(--font-great-vibes), Georgia, serif", fontSize: "1.3em" }}>SammsConsult</span> &mdash; All Rights Reserved.
           </p>
 
           {/* Nav links row */}

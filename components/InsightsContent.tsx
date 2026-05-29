@@ -40,10 +40,10 @@ const insights = [
     desc: "Our team of experts research into innovative solutions for Geothermal energy, and advise in the area of design, development, and installation. We have the expertise to provide advice and review solutions to ensure that they are efficient, reliable, and cost-effective.",
   },
   {
-    title: "Energy Storage",
+    title: "Energy and Data Storage Centre",
     image:
-      "https://images.unsplash.com/photo-1620714223084-8fcacc2dbe4d?q=80&w=800&auto=format&fit=crop",
-    alt: "Lithium battery cells for large-scale energy storage",
+      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop",
+    alt: "Energy infrastructure and power grid",
     desc: "Our Energy and Data Storage Centre services research innovative solutions for storing renewable energy and also data centres. Our team of experts has the skills and experience in options selection.",
   },
   {

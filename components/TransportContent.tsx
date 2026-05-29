@@ -64,7 +64,7 @@ export default function TransportContent() {
             className="text-3xl md:text-5xl font-light text-white leading-snug"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
-            Transport Engineering
+            <span style={{ color: "#c9a84c" }}>Road</span> and Transportation Engineering
             <br />
             <span style={{ color: "#c9a84c" }}>Consultancy</span>
           </motion.h1>
